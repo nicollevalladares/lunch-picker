@@ -19,8 +19,10 @@ export default {
                 password: this.password
             })
             .then(response => {
-                store.dispatch('detectUser',{email:response.data.data.email, uid: response.data.data.uid, token: response.data.data.token})
-                // router.push({ path: `/index/${}` })
+                var data = response.data.data
+
+                store.dispatch('detectUser',{email:data.email, uid: data.uid, token: data.token})
+                this.$router.push({ path: `/index/${data.uid}` })
                 console.log(this.user);
             })
         }

@@ -1,4 +1,5 @@
 import Login from '../components/login.vue'
+import Index from '../components/index.vue'
 
 const routes = [
     {
@@ -10,6 +11,12 @@ const routes = [
                 path: '/login',
                 name: 'login',
                 component: Login
+            },
+            {
+                path: '/index',
+                name: 'index',
+                component: Index,
+                meta: { requiresAuth: true}
             }
         ]
     }
