@@ -2,12 +2,6 @@
   <div>
     <b-container class="login">
       <h3>LOGIN</h3>
-      <!-- label for name -->
-      <!-- <b-row class="label-login">
-        <b-col sm="12">
-          <b-form-input id="name" placeholder="Enter your name"></b-form-input>
-        </b-col>
-      </b-row> -->
 
       <!-- label for email -->
       <b-row class="label-login">
