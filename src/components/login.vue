@@ -12,18 +12,28 @@
       <!-- label for email -->
       <b-row class="label-login">
         <b-col sm="12">
-          <b-form-input type="text" id="email" placeholder="Enter your email"></b-form-input>
+          <b-form-input 
+            type="text" 
+            id="email" 
+            v-model="email" 
+            placeholder="Enter your email"
+          ></b-form-input>
         </b-col>
       </b-row>
 
       <!-- label for password -->
       <b-row class="label-login">
         <b-col sm="12">
-          <b-form-input type="password" id="password" placeholder="Enter your password"></b-form-input>
+          <b-form-input 
+            type="password" 
+            id="password" 
+            v-model="password" 
+            placeholder="Enter your password"
+          ></b-form-input>
         </b-col>
       </b-row>
 
-      <b-button variant="outline-primary">Login</b-button>
+      <b-button variant="outline-primary" @click="login">Login</b-button>
     </b-container>
   </div>
 </template>
