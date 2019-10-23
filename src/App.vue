@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <login/>
+    <Login/>
   </div>
 </template>
 
 <script>
-import login from './components/login.vue'
+import Login from './components/login.vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 export default {
   name: 'app',
   components: {
-    login
+    Login
   }
 }
 </script>
