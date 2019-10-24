@@ -9,10 +9,6 @@ Vue.config.productionTip = false
 
 Vue.use(BootstrapVue)
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
-
 firebase.auth().onAuthStateChanged((user) => {
   if(user){ 
     firebase.auth().currentUser.getIdToken()

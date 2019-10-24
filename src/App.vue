@@ -1,21 +1,10 @@
 <template>
   <div id="app">
-    <Login/>
+    <router-view></router-view>
   </div>
 </template>
 
-<script>
-import Login from './components/login.vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-export default {
-  name: 'app',
-  components: {
-    Login
-  }
-}
-</script>
+<script src="./js/App.js"></script>
 
 <style>
 #app {
